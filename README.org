@@ -2,60 +2,77 @@
 * 新人上手资料
 对于一些新加入的成员，有很多需要你们学习和掌握的知识。
 
-** 第一阶段（1个月）
-1. 高数、线代、概率统计
-2. matlab的使用（边学边用）
-3. 神经网络的基础：UFLDL：
-   http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B
-** 第二阶段（1个月）
-1. 熟练使用Python：
+Python安装选择Anaconda Python。自己到官网上下载，看教程。
+** 第一阶段 （神经网络）
+1. 学习Python：（可以跟2同步进行）
    http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/
-2. 了解并学习框架：pandas+numpy, sklearn。（参看各个对应的网站的文档）
-3. 使用Python解决一个机器学习的问题（project）
-** 第三阶段
-最后一步，进入研究：
-1. 阅读经典论文：AlexNet，FCN，ResNet
-2. Python结合tensorflow实验上面的网络
-3. 掌握git，使用github管理自己的代码
-4. 使用Latex写论文
+2. 学习神经网络模型：
+   http://neuralnetworksanddeeplearning.com/
+3. 项目：
+   - 自定义的数据集
+   - 使用神经网络求解：分类、回归
+** 第二阶段 （CNN）
+1. 利用Theano学习LeNet ： http://deeplearning.net/tutorial/lenet.html
+2. 阅读经典论文：AlexNet
+3. 项目：
+   - 使用Theano自己实现：AlexNet
 
-** 额外如果有精力的学习资料
-机器学习书籍
+** 第三阶段（tensorfow）
+1. 阅读tensorflow文档例子
+2. 使用tensorflow在服务器上实现AlexNet，使用CIFAR-10数据集，运行求解AlexNet。
+
+** 第四阶段（经典论文必读）
+1. Network In Network
+2. Batch Normalization 
+3. Deconvolution Network : [[http://www.matthewzeiler.com/pubs/cvpr2010/cvpr2010.pdf][link]]
+4. Residual Network
+
+** 研究阶段
+预备知识：
+- 主成分分析（PCA），白化（ZCA，whitening）
+- Decision Tree，K-Means，KNN，logistic regression， LASSO
+- 概率图+隐马尔科夫模型（HMM）
+- RNN(Recurrent Neural Network)
+
+问题相关背景知识：
+- 图像特征：HOG、SIFT、color histogram
+- 相关滤波、粒子滤波
+
+TODO: @crackhopper @mingzailao @BeautyGirlForEver 分别完善各自领域下的进阶阅读资
+料和paper list
+*** 神经网络原理与结构
+*** 神经网络生成式模型
+*** 视觉应用：视频追踪
+*** 视觉应用：图像分割/Saliency
+* 其他资料
+** 学习书籍
 - 李航：统计学习方法
 - 周志华：机器学习
 - Bishop： Pattern Recognition and Machine Learning 
 - Yoshua Bengio :  Deep Learning
-- Stephen Wright : Numerical Optimization
+- Probabilistic Graphical Models: Principles and Techniques
+- Numerical Optimization
+- 数字图像处理（冈萨雷斯）
+- 信号与系统（奥本海姆）
+- Learning OpenCV
 
-需要关注的会议：
+** 需要关注的会议：
 http://www.ccf.org.cn/sites/ccf/biaodan.jsp?contentId=2567814757420
 1. AAAI/CVPR/ICCV/ICML/IJCAI
 2. COLTS/NIPS/ECCV/UAI/EMNLP/ECAI
 3. ACCV/ICANN/BMVC/IJCNN
 4. ICLR
+** 工具：
+1. git
+2. latex
+3. linux shell
+4. emacs org-mode
+* 备注
+最重要的工具是快速学习和吸收知识的能力。
 
-C++技术
-1. 数字图像处理（冈萨雷斯），信号与系统（奥本海姆）。
-2. 熟悉使用C++。掌握STL，会使用C++11，了解一点Boost。
-3. 熟悉C++内存模型、多线程中的锁、智能指针等常用技术
-4. OpenCV，以及结合OpenCV的传统的机器视觉的方法
-5. C++工具链：cmake，gcc，gdb。
-
-GPU加速：
-1. 学习CUDA，cublas。了解缓存命中、指令乱发等等加速机制。使用CUDA的vector指令操
-   作数据。高效的写CUDA程序。
-2. 学习并发式算法，掌握一些数据流的设计，pipeline/ring structure等等。
-3. 会使用profiler分析性能
-
-CPU加速：
-1. 学习OpenBlas或者MKL等CPU数据运算库。学习使用SSD命令。
-2. 会使用profiler分析性能
-
-** 奇技淫巧
-- emacs 
-* 研究方向
-TODO：每个方向的人把自己方向看过的论文都附在下面。
-** 深度学习原理、结构
-** 对抗神经网络、生成式模型
-** 视觉应用：视频追踪、图像分割
-
+- 举个例子，比如，找到一篇论文，代码是用torch写的，怎么办？
+- 答1： 不做啦！ （这种态度是不对的）
+- 答2： 上网搜Torch，发现这个东西是用lua写的，不会lua，跟学长说我不会 （这种态度
+  也不对）
+- 答3： 上网搜Torch，发现这个东西是用lua写的，学习lua知识，学习Torch用法，看懂源
+  代码，运行试验。（满分）
