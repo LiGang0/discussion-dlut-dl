@@ -42,9 +42,17 @@ TODO: @crackhopper @mingzailao @BeautyGirlForEver 分别完善各自领域下的
 料和paper list
 *** 神经网络原理与结构
 *** 神经网络生成式模型
-- VAE(Variational Auto Encoder) : [[https://arxiv.org/abs/1312.6114][Auto-Encoding Variational Bayes]]
-- DRAW : [[https://arxiv.org/abs/1502.04623][DRAW: A Recurrent Neural Network For Image Generation]]
- 
+**** Variational Inference
+- VAE(Variational Auto Encoder) : [[https://arxiv.org/abs/1312.6114][Auto-Encoding Variational Bayes]] 
+- DRAW : [[https://arxiv.org/abs/1502.04623][DRAW: A Recurrent Neural Network For Image Generation]] 
+**** Generate Adversarial Network
+- GAN : [[http://papers.nips.cc/paper/5423-generative-adversarial][Generative Adversarial Nets]] 
+- CGAN : [[http://arxiv.org/abs/1411.1784][Conditional Generative Adversarial Nets]]
+- InfoGAN : [[http://arxiv.org/abs/1606.03657][InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets]]
+- LAPGAN : [[http://arxiv.org/abs/1506.05751][Deep Generative Image Models using a Laplacian Pyramid of Adversarial Networks]]
+- DCGAN : [[http://arxiv.org/abs/1511.06434][Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks]] 
+
+- [[http://arxiv.org/abs/1611.01799][Generative Adversarial Networks as Variational Training of Energy Based Models]]
 *** 视觉应用：视频追踪
 *** 视觉应用：图像分割/Saliency
 * 其他资料
