@@ -52,7 +52,8 @@ TODO: @crackhopper @mingzailao @BeautyGirlForEver 分别完善各自领域下的
 - LAPGAN : [[http://arxiv.org/abs/1506.05751][Deep Generative Image Models using a Laplacian Pyramid of Adversarial Networks]]
 - DCGAN : [[http://arxiv.org/abs/1511.06434][Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks]] 
 
-- [[http://arxiv.org/abs/1611.01799][Generative Adversarial Networks as Variational Training of Energy Based Models]]
+- [[http://arxiv.org/abs/1611.01799][Generative Adversarial Networks as Variational Training of Energy Based Models]] 
+From mingzailao : [[https:mingzailao.github.io][Blog]]
 *** 视觉应用：视频追踪
 *** 视觉应用：图像分割/Saliency
 * 其他资料
