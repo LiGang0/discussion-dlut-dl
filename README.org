@@ -40,8 +40,23 @@ Python安装选择Anaconda Python。自己到官网上下载，看教程。
 
 TODO: @crackhopper @mingzailao @BeautyGirlForEver 分别完善各自领域下的进阶阅读资
 料和paper list
-*** 神经网络原理与结构
-*** 神经网络生成式模型
+*** Structures And Tricks
+**** Initialization
+- Greedy layer-wise training of deep networks (这篇是使用Auto-Encoder，采取DBN类似的layer-wise pretraining)
+- The Difficulty of Training Deep Architectures and the Effect of Unsupervised Pre-Training (这篇有关于pretraining的大量实验，包括一些推测pretraining。不过有一些错误，比如，优化难点不是因为local minima，而是saddle points，后来的论文中有相关内容)
+- Understanding the difficulty of training deep feedforward neural networks. (这篇是著名的Xavier初始化算法，被广泛使用，原理并不难)
+- Delving deep into rectifiers: Surpassing human-level performance on imagenet classification (这篇是改进的Xavier，用以适应ReLU)
+
+最新进展：
+- All you need is a good init
+- Data-dependent initializations of convolutional neural networks
+- Generalizing and Improving Weight Initialization
+以上3篇是最新关于初始化的集中进展。第一个是通过batch计算统计量，来初始化；第二个也通过batch，并有层内和层间调整的公式；最后一个，对dropout进行了一些处理，改进的文章投在ICLR2017上，正在review。
+是根据dropout调整
+**** Theory
+- Exact solutions to the nonlinear dynamics of learning in deep linear neural networks(线性网络下使用动力系统分析了BP的过程，给出了BP优化快需要的条件)
+- Provable Bounds for Learning Some Deep Representations.(使用概率的手段，在稀疏假设下，推导了神经网络的表达能力。给出了一个比较粗糙的网络连接构造的方法。)
+*** Generative Model
 **** Variational Inference
 - VAE(Variational Auto Encoder) : [[https://arxiv.org/abs/1312.6114][Auto-Encoding Variational Bayes]] 
 - DRAW : [[https://arxiv.org/abs/1502.04623][DRAW: A Recurrent Neural Network For Image Generation]] 
@@ -54,8 +69,8 @@ TODO: @crackhopper @mingzailao @BeautyGirlForEver 分别完善各自领域下的
 
 - [[http://arxiv.org/abs/1611.01799][Generative Adversarial Networks as Variational Training of Energy Based Models]] 
 From mingzailao : [[https://mingzailao.github.io][Blog]]
-*** 视觉应用：视频追踪
-*** 视觉应用：图像分割/Saliency
+*** Visual Tracking
+*** Segmentation
 * 其他资料
 ** 学习书籍
 - 李航：统计学习方法
