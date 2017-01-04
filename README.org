@@ -68,9 +68,12 @@ TODO: @crackhopper @mingzailao @BeautyGirlForEver 分别完善各自领域下的
 - DCGAN : [[http://arxiv.org/abs/1511.06434][Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks]] 
 
 - [[http://arxiv.org/abs/1611.01799][Generative Adversarial Networks as Variational Training of Energy Based Models]] 
-From mingzailao : [[https://mingzailao.github.io][Blog]]
+
 *** Visual Tracking
 *** Segmentation
+- DeepMask [[http://papers.nips.cc/paper/5852-learning-to-segment-object-candidates][Learning to Segment Object Candidates]]
+- FCN [[http://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Long_Fully_Convolutional_Networks_2015_CVPR_paper.html][Fully Convolutional Networks for Semantic Segmentation]]
+- SharpMask [[https://arxiv.org/abs/1603.08695][Learning to Refine Object Segments]]
 * 其他资料
 ** 学习书籍
 - 李航：统计学习方法
